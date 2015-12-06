@@ -23,4 +23,8 @@ class Nnd
   def output_valid?
 
   end
+
+  def display_output
+
+  end
 end
