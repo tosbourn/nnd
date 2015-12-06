@@ -1,4 +1,4 @@
-require './nnd'
+require './lib/nnd'
 
 describe Nnd do
   describe 'input' do
