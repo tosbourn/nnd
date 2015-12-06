@@ -11,7 +11,7 @@ a short script that would show off the simplicity of the calculation in Ruby.
 ## To run
 
 ```bash
-ruby nnd.rb
+ruby run.rb
 ```
 You will be prompted to enter one number, then a second.
 
