@@ -3,6 +3,7 @@ class Nnd
     @first_number = first_number.to_i
     @second_number = second_number.to_i
     raise "invalid numbers" unless numbers_valid?
+    display_output if output_valid?
   end
 
   private
@@ -15,6 +16,11 @@ class Nnd
     @first_number * @second_number
   end
 
+  def calculated_output
+    "#{starting_number_plus_difference}#{multiplication_of_differences}".to_i
+  end
+
   def output_valid?
+
   end
 end
