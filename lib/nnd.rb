@@ -1,11 +1,12 @@
 require 'pry'
+
 class Nnd
   def initialize(first_number, second_number, output_method = ToScreen.new)
     @first_number = first_number.to_i
     @second_number = second_number.to_i
     @output_method = output_method
-    @closest_multiple_of_ten = closest_multiple_of_ten
     raise InvalidNumbers unless numbers_valid?
+    @closest_multiple_of_ten = closest_multiple_of_ten
   end
 
   def output_answer
@@ -15,10 +16,18 @@ class Nnd
   private
 
   def closest_multiple_of_ten
-    if length(@first_number) > length(@second_number)
-      10 ** length(@first_number)
+    chosen_number = if length(@first_number) > length(@second_number)
+      @first_number
     else
-      10 ** length(@second_number)
+      @second_number
+    end
+
+    main_multiple = 10 ** length(chosen_number)
+
+    if (length(chosen_number) <= 2 || (chosen_number.to_f / main_multiple.to_f).round > 0)
+      main_multiple
+    else
+      10 ** (length(chosen_number) - 1)
     end
   end
 
