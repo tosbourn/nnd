@@ -1,9 +1,9 @@
-# Nikhilam Navatascaramam Dasata in Ruby
+# Nikhilam Navatashcaramam Dashatah
 
-Nikhilam Navatascaramam Dasata is an algorithm which I have read about for quickly
+Nikhilam Navatascaramam Dashatah is an algorithm which I have read about for quickly
 multiplying two numbers that are close to the same multiple of 10.
 
-You can read more about [Nikhilam Navatascaramam Dasata](http://www.ludism.org/mentat/NumbersNearMultiplesOfTen).
+You can read more about [Nikhilam Navatascaramam Dashatah](http://www.ludism.org/mentat/NumbersNearMultiplesOfTen).
 
 I experiemented by doing some quick calculations on paper but I wanted to write
 a short script that would show off the simplicity of the calculation in Ruby.
